@@ -34,7 +34,7 @@ export default function ProtocolSimulator() {
   const [activeEvent, setActiveEvent] = useState(null);
   const [simState, setSimState] = useState('idle'); // idle, running, complete
 
-  const runSimulation = (event) => {
+  const runSimulation = (event: typeof SCENARIOS[0]) => {
     setActiveEvent(event);
     setSimState('running');
     // Simulation logic here
