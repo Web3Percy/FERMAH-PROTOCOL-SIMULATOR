@@ -32,7 +32,7 @@ const SCENARIOS = [
 
 export default function ProtocolSimulator() {
   const [activeEvent, setActiveEvent] = useState(null);
-  const [simState, setSimState] = useState('idle'); // idle, running, complete
+  const runSimulation = (event: typeof SCENARIOS[0]) => {
 
   const runSimulation = (event: typeof SCENARIOS[0]) => {
     setActiveEvent(event);
